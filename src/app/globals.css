@@ -1,13 +1,31 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+  --white: #fefefe;
+  --background-white: #ebe9e9;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --black: #232323;
+  --background-black: #3e3c3c;
+
+  --gray: #505050;
+  --gray-white: #dbd8d8;
+  --gray-dark: #cecece;
+
+  --blue: #1562de;
+  
+  --one: #082f49;
+  --two: #0c4a6e;
+  --three: #075985;
+  --four: #0369a1;
+  --five: #0284c7;
+  --six: #0ea5e9;
+  --seven: #38bdf8;
+  --eight: #7dd3fc;
+  --nine: #bae6fd;
+  --ten: #e0f2fe;
+  --eleven: #f0f9ff;
+
+
+  /* Width and Height */
+  --max-width: 1200px;
 }
 
 html,
@@ -28,6 +46,7 @@ body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: var(--font-montserrat);
 }
 
 a {
