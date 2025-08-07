@@ -1,0 +1,522 @@
+[
+  {
+    "id": 1,
+    "name": "Produto Exemplo 1",
+    "description": "Descrição do Produto Exemplo 1.",
+    "price": 228.5,
+    "quantity": 36,
+    "category": "Esporte",
+    "brand": "HomePlus",
+    "sku": "SKU-00001",
+    "imageUrl": "https://example.com/images/produto-1.jpg",
+    "createdAt": "2025-07-30T12:59:44.949799",
+    "updatedAt": "2025-07-17T12:59:44.949817",
+    "isActive": true,
+    "discountPercentage": 5,
+    "tags": [
+      "tag1",
+      "promo",
+      "venda"
+    ],
+    "weight": 0.68,
+    "dimensions": {
+      "width": 19.7,
+      "height": 5.9,
+      "depth": 3.6
+    }
+  },
+  {
+    "id": 2,
+    "name": "Produto Exemplo 2",
+    "description": "Descrição do Produto Exemplo 2.",
+    "price": 1230.86,
+    "quantity": 37,
+    "category": "Eletrônicos",
+    "brand": "TechBrand",
+    "sku": "SKU-00002",
+    "imageUrl": "https://example.com/images/produto-2.jpg",
+    "createdAt": "2025-08-03T12:59:44.949841",
+    "updatedAt": "2025-07-25T12:59:44.949846",
+    "isActive": false,
+    "discountPercentage": 20,
+    "tags": [
+      "tag2",
+      "promo",
+      "venda"
+    ],
+    "weight": 0.29,
+    "dimensions": {
+      "width": 13.8,
+      "height": 19.7,
+      "depth": 9.3
+    }
+  },
+  {
+    "id": 3,
+    "name": "Produto Exemplo 3",
+    "description": "Descrição do Produto Exemplo 3.",
+    "price": 1969.83,
+    "quantity": 63,
+    "category": "Eletrônicos",
+    "brand": "TechBrand",
+    "sku": "SKU-00003",
+    "imageUrl": "https://example.com/images/produto-3.jpg",
+    "createdAt": "2025-07-14T12:59:44.949865",
+    "updatedAt": "2025-07-17T12:59:44.949873",
+    "isActive": true,
+    "discountPercentage": 0,
+    "tags": [
+      "tag3",
+      "promo",
+      "venda"
+    ],
+    "weight": 0.35,
+    "dimensions": {
+      "width": 12.5,
+      "height": 7.5,
+      "depth": 3.0
+    }
+  },
+  {
+    "id": 4,
+    "name": "Produto Exemplo 4",
+    "description": "Descrição do Produto Exemplo 4.",
+    "price": 690.05,
+    "quantity": 49,
+    "category": "Roupas",
+    "brand": "FashionCo",
+    "sku": "SKU-00004",
+    "imageUrl": "https://example.com/images/produto-4.jpg",
+    "createdAt": "2025-07-30T12:59:44.949891",
+    "updatedAt": "2025-07-23T12:59:44.949897",
+    "isActive": true,
+    "discountPercentage": 5,
+    "tags": [
+      "tag4",
+      "promo",
+      "venda"
+    ],
+    "weight": 0.74,
+    "dimensions": {
+      "width": 12.1,
+      "height": 9.3,
+      "depth": 6.3
+    }
+  },
+  {
+    "id": 5,
+    "name": "Produto Exemplo 5",
+    "description": "Descrição do Produto Exemplo 5.",
+    "price": 210.17,
+    "quantity": 0,
+    "category": "Casa",
+    "brand": "TechBrand",
+    "sku": "SKU-00005",
+    "imageUrl": "https://example.com/images/produto-5.jpg",
+    "createdAt": "2025-07-27T12:59:44.949921",
+    "updatedAt": "2025-07-22T12:59:44.949925",
+    "isActive": false,
+    "discountPercentage": 5,
+    "tags": [
+      "tag5",
+      "promo",
+      "venda"
+    ],
+    "weight": 2.63,
+    "dimensions": {
+      "width": 6.0,
+      "height": 11.5,
+      "depth": 3.2
+    }
+  },
+  {
+    "id": 6,
+    "name": "Produto Exemplo 6",
+    "description": "Descrição do Produto Exemplo 6.",
+    "price": 581.05,
+    "quantity": 24,
+    "category": "Roupas",
+    "brand": "HomePlus",
+    "sku": "SKU-00006",
+    "imageUrl": "https://example.com/images/produto-6.jpg",
+    "createdAt": "2025-08-06T12:59:44.949942",
+    "updatedAt": "2025-08-02T12:59:44.949948",
+    "isActive": false,
+    "discountPercentage": 0,
+    "tags": [
+      "tag6",
+      "promo",
+      "venda"
+    ],
+    "weight": 2.31,
+    "dimensions": {
+      "width": 9.6,
+      "height": 6.7,
+      "depth": 6.4
+    }
+  },
+  {
+    "id": 7,
+    "name": "Produto Exemplo 7",
+    "description": "Descrição do Produto Exemplo 7.",
+    "price": 826.72,
+    "quantity": 64,
+    "category": "Casa",
+    "brand": "SportX",
+    "sku": "SKU-00007",
+    "imageUrl": "https://example.com/images/produto-7.jpg",
+    "createdAt": "2025-07-08T12:59:44.949969",
+    "updatedAt": "2025-08-01T12:59:44.949972",
+    "isActive": true,
+    "discountPercentage": 20,
+    "tags": [
+      "tag7",
+      "promo",
+      "venda"
+    ],
+    "weight": 2.68,
+    "dimensions": {
+      "width": 6.4,
+      "height": 6.5,
+      "depth": 7.3
+    }
+  },
+  {
+    "id": 8,
+    "name": "Produto Exemplo 8",
+    "description": "Descrição do Produto Exemplo 8.",
+    "price": 21.17,
+    "quantity": 18,
+    "category": "Roupas",
+    "brand": "GadgetPro",
+    "sku": "SKU-00008",
+    "imageUrl": "https://example.com/images/produto-8.jpg",
+    "createdAt": "2025-07-16T12:59:44.949990",
+    "updatedAt": "2025-07-18T12:59:44.949994",
+    "isActive": true,
+    "discountPercentage": 0,
+    "tags": [
+      "tag8",
+      "promo",
+      "venda"
+    ],
+    "weight": 3.16,
+    "dimensions": {
+      "width": 8.1,
+      "height": 15.6,
+      "depth": 1.2
+    }
+  },
+  {
+    "id": 9,
+    "name": "Produto Exemplo 9",
+    "description": "Descrição do Produto Exemplo 9.",
+    "price": 1027.6,
+    "quantity": 22,
+    "category": "Esporte",
+    "brand": "SportX",
+    "sku": "SKU-00009",
+    "imageUrl": "https://example.com/images/produto-9.jpg",
+    "createdAt": "2025-08-04T12:59:44.950010",
+    "updatedAt": "2025-07-25T12:59:44.950014",
+    "isActive": false,
+    "discountPercentage": 15,
+    "tags": [
+      "tag9",
+      "promo",
+      "venda"
+    ],
+    "weight": 1.52,
+    "dimensions": {
+      "width": 8.6,
+      "height": 7.5,
+      "depth": 3.9
+    }
+  },
+  {
+    "id": 10,
+    "name": "Produto Exemplo 10",
+    "description": "Descrição do Produto Exemplo 10.",
+    "price": 1934.88,
+    "quantity": 81,
+    "category": "Esporte",
+    "brand": "GadgetPro",
+    "sku": "SKU-00010",
+    "imageUrl": "https://example.com/images/produto-10.jpg",
+    "createdAt": "2025-07-17T12:59:44.950028",
+    "updatedAt": "2025-07-29T12:59:44.950031",
+    "isActive": true,
+    "discountPercentage": 5,
+    "tags": [
+      "tag10",
+      "promo",
+      "venda"
+    ],
+    "weight": 4.57,
+    "dimensions": {
+      "width": 9.0,
+      "height": 5.6,
+      "depth": 6.0
+    }
+  },
+  {
+    "id": 11,
+    "name": "Produto Exemplo 11",
+    "description": "Descrição do Produto Exemplo 11.",
+    "price": 1580.26,
+    "quantity": 60,
+    "category": "Roupas",
+    "brand": "FashionCo",
+    "sku": "SKU-00011",
+    "imageUrl": "https://example.com/images/produto-11.jpg",
+    "createdAt": "2025-08-03T12:59:44.950051",
+    "updatedAt": "2025-07-25T12:59:44.950054",
+    "isActive": true,
+    "discountPercentage": 5,
+    "tags": [
+      "tag11",
+      "promo",
+      "venda"
+    ],
+    "weight": 4.6,
+    "dimensions": {
+      "width": 19.3,
+      "height": 5.2,
+      "depth": 2.8
+    }
+  },
+  {
+    "id": 12,
+    "name": "Produto Exemplo 12",
+    "description": "Descrição do Produto Exemplo 12.",
+    "price": 369.21,
+    "quantity": 2,
+    "category": "Casa",
+    "brand": "SportX",
+    "sku": "SKU-00012",
+    "imageUrl": "https://example.com/images/produto-12.jpg",
+    "createdAt": "2025-07-21T12:59:44.950072",
+    "updatedAt": "2025-07-25T12:59:44.950077",
+    "isActive": false,
+    "discountPercentage": 0,
+    "tags": [
+      "tag12",
+      "promo",
+      "venda"
+    ],
+    "weight": 0.7,
+    "dimensions": {
+      "width": 7.6,
+      "height": 10.4,
+      "depth": 9.2
+    }
+  },
+  {
+    "id": 13,
+    "name": "Produto Exemplo 13",
+    "description": "Descrição do Produto Exemplo 13.",
+    "price": 81.97,
+    "quantity": 57,
+    "category": "Casa",
+    "brand": "HomePlus",
+    "sku": "SKU-00013",
+    "imageUrl": "https://example.com/images/produto-13.jpg",
+    "createdAt": "2025-07-31T12:59:44.950095",
+    "updatedAt": "2025-07-09T12:59:44.950098",
+    "isActive": false,
+    "discountPercentage": 20,
+    "tags": [
+      "tag13",
+      "promo",
+      "venda"
+    ],
+    "weight": 3.66,
+    "dimensions": {
+      "width": 9.4,
+      "height": 9.6,
+      "depth": 4.5
+    }
+  },
+  {
+    "id": 14,
+    "name": "Produto Exemplo 14",
+    "description": "Descrição do Produto Exemplo 14.",
+    "price": 440.76,
+    "quantity": 100,
+    "category": "Roupas",
+    "brand": "SportX",
+    "sku": "SKU-00014",
+    "imageUrl": "https://example.com/images/produto-14.jpg",
+    "createdAt": "2025-07-24T12:59:44.950111",
+    "updatedAt": "2025-07-30T12:59:44.950114",
+    "isActive": false,
+    "discountPercentage": 10,
+    "tags": [
+      "tag14",
+      "promo",
+      "venda"
+    ],
+    "weight": 2.46,
+    "dimensions": {
+      "width": 10.5,
+      "height": 10.7,
+      "depth": 6.8
+    }
+  },
+  {
+    "id": 15,
+    "name": "Produto Exemplo 15",
+    "description": "Descrição do Produto Exemplo 15.",
+    "price": 1762.57,
+    "quantity": 77,
+    "category": "Casa",
+    "brand": "FashionCo",
+    "sku": "SKU-00015",
+    "imageUrl": "https://example.com/images/produto-15.jpg",
+    "createdAt": "2025-07-27T12:59:44.950128",
+    "updatedAt": "2025-08-05T12:59:44.950131",
+    "isActive": true,
+    "discountPercentage": 0,
+    "tags": [
+      "tag15",
+      "promo",
+      "venda"
+    ],
+    "weight": 4.17,
+    "dimensions": {
+      "width": 8.0,
+      "height": 8.5,
+      "depth": 6.3
+    }
+  },
+  {
+    "id": 16,
+    "name": "Produto Exemplo 16",
+    "description": "Descrição do Produto Exemplo 16.",
+    "price": 1233.08,
+    "quantity": 72,
+    "category": "Roupas",
+    "brand": "FashionCo",
+    "sku": "SKU-00016",
+    "imageUrl": "https://example.com/images/produto-16.jpg",
+    "createdAt": "2025-07-11T12:59:44.950144",
+    "updatedAt": "2025-07-18T12:59:44.950163",
+    "isActive": true,
+    "discountPercentage": 5,
+    "tags": [
+      "tag16",
+      "promo",
+      "venda"
+    ],
+    "weight": 2.83,
+    "dimensions": {
+      "width": 11.8,
+      "height": 6.4,
+      "depth": 4.4
+    }
+  },
+  {
+    "id": 17,
+    "name": "Produto Exemplo 17",
+    "description": "Descrição do Produto Exemplo 17.",
+    "price": 133.65,
+    "quantity": 90,
+    "category": "Eletrônicos",
+    "brand": "SportX",
+    "sku": "SKU-00017",
+    "imageUrl": "https://example.com/images/produto-17.jpg",
+    "createdAt": "2025-08-04T12:59:44.950192",
+    "updatedAt": "2025-07-20T12:59:44.950196",
+    "isActive": false,
+    "discountPercentage": 0,
+    "tags": [
+      "tag17",
+      "promo",
+      "venda"
+    ],
+    "weight": 2.69,
+    "dimensions": {
+      "width": 6.7,
+      "height": 16.4,
+      "depth": 5.7
+    }
+  },
+  {
+    "id": 18,
+    "name": "Produto Exemplo 18",
+    "description": "Descrição do Produto Exemplo 18.",
+    "price": 381.88,
+    "quantity": 62,
+    "category": "Esporte",
+    "brand": "SportX",
+    "sku": "SKU-00018",
+    "imageUrl": "https://example.com/images/produto-18.jpg",
+    "createdAt": "2025-07-31T12:59:44.950212",
+    "updatedAt": "2025-07-09T12:59:44.950215",
+    "isActive": false,
+    "discountPercentage": 10,
+    "tags": [
+      "tag18",
+      "promo",
+      "venda"
+    ],
+    "weight": 3.2,
+    "dimensions": {
+      "width": 14.2,
+      "height": 17.8,
+      "depth": 4.7
+    }
+  },
+  {
+    "id": 19,
+    "name": "Produto Exemplo 19",
+    "description": "Descrição do Produto Exemplo 19.",
+    "price": 1974.04,
+    "quantity": 27,
+    "category": "Esporte",
+    "brand": "FashionCo",
+    "sku": "SKU-00019",
+    "imageUrl": "https://example.com/images/produto-19.jpg",
+    "createdAt": "2025-08-04T12:59:44.950227",
+    "updatedAt": "2025-08-04T12:59:44.950232",
+    "isActive": false,
+    "discountPercentage": 10,
+    "tags": [
+      "tag19",
+      "promo",
+      "venda"
+    ],
+    "weight": 4.57,
+    "dimensions": {
+      "width": 8.7,
+      "height": 12.3,
+      "depth": 3.3
+    }
+  },
+  {
+    "id": 20,
+    "name": "Produto Exemplo 20",
+    "description": "Descrição do Produto Exemplo 20.",
+    "price": 1442.05,
+    "quantity": 3,
+    "category": "Casa",
+    "brand": "TechBrand",
+    "sku": "SKU-00020",
+    "imageUrl": "https://example.com/images/produto-20.jpg",
+    "createdAt": "2025-08-07T12:59:44.950252",
+    "updatedAt": "2025-07-21T12:59:44.950258",
+    "isActive": true,
+    "discountPercentage": 10,
+    "tags": [
+      "tag20",
+      "promo",
+      "venda"
+    ],
+    "weight": 3.36,
+    "dimensions": {
+      "width": 12.4,
+      "height": 15.2,
+      "depth": 4.9
+    }
+  }
+]

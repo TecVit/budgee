@@ -1,5 +1,6 @@
 :root {
   --white: #fefefe;
+  --hover-white: #e5e5e9;
   --background-white: #ebe9e9;
 
   --black: #232323;
@@ -9,7 +10,10 @@
   --gray-white: #dbd8d8;
   --gray-dark: #cecece;
 
+  --green: #02b54d;
   --blue: #1562de;
+  --background-blue: #6c717419;
+  --red: #c31111;
   
   --one: #082f49;
   --two: #0c4a6e;
@@ -26,6 +30,7 @@
 
   /* Width and Height */
   --max-width: 1200px;
+  --porcent-width: 92.5%;
 }
 
 html,
@@ -35,8 +40,8 @@ body {
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
+  color: var(--black);
+  background: var(--background-white);
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -45,6 +50,7 @@ body {
 * {
   padding: 0;
   margin: 0;
+  border: 0;
   box-sizing: border-box;
   font-family: var(--font-montserrat);
 }
@@ -58,4 +64,86 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+
+/* Copyright */
+.copyright {
+  width: var(--porcent-width);
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--gray);
+  text-align: center;
+  margin: -100px auto 50px auto;
+}
+
+/* Not Found - 404 */
+.container-404 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translateY(-150px);
+  margin: 0px 0px -100px 0px;
+}
+
+.container-404 .content-404 {
+  width: var(--porcent-width);
+  max-width: 600px;
+  height: auto;
+  min-height: 350px;
+  background: var(--white);
+  border: 2px solid var(--gray-white);
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-404 .content-404 h1 {
+  font-size: 66px;
+  font-weight: 800;
+  letter-spacing: 5px;
+  margin: 0px 0px 12px 0px;
+  color: var(--three);
+}
+
+.container-404 .content-404 h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0px 0px 4px 0px;
+}
+
+.container-404 .content-404 p {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0px 0px 20px 0px;
+}
+
+.container-404 .content-404 a {
+  padding: 15px 20px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  background: var(--three);
+  color: var(--white);
+  transition: all .2s ease-in-out;
+} .container-404 .content-404 a:focus,
+.container-404 .content-404 a:hover {
+  background: var(--blue);
+}
+
+
+/* Btns */
+.btn-green {
+  background: var(--green) !important;
+  color: var(--white) !important;
+}
+
+.btn-red {
+  background: var(--red) !important;
+  color: var(--white) !important;
 }

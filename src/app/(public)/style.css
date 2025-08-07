@@ -81,6 +81,22 @@
   font-size: 17px;
   font-weight: 400;
   margin: 0px 0px 10px 2px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+} 
+
+.container-auth .content-auth .form .center .input label span.error {
+  color: var(--red);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 15px;
+  margin: 0px 0px 0px 8px;
+} .container-auth .content-auth .form .center .input label span.error .icon {
+  width: 16px;
+  height: auto;
+  margin: 0px 4px 0px 0px;
 }
 
 .container-auth .content-auth .form .center .input input {
