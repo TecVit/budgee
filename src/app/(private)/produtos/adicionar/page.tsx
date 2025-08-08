@@ -18,7 +18,18 @@ const Produtos = () => {
     }
 
     fetching();
-  }, [])
+  }, []);
+
+  /* Files */
+  const [fileName, setFileName] = useState<string>("Nenhum arquivo selecionado");
+
+  const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    if (event.target.files && event.target.files.length > 0) {
+      setFileName(event.target.files[0].name);
+    } else {
+      setFileName("Nenhum arquivo selecionado");
+    }
+  };
 
   return (
     <main className='container-dashboard'>
@@ -31,39 +42,46 @@ const Produtos = () => {
           </div>
           <div className="btns">
             <Link className='btn-red' href="/produtos">Cancelar</Link>
-            <Link className='btn-green' href="">Salvar Produto</Link>
+            <Link className='btn-green' href="">Adicionar Produto</Link>
           </div>
         </div>
 
         <div className="form-dashboard">
           <div className="row">
+            <div className="file-upload"> 
+              <label htmlFor="fileInput" className="file-label">
+                <span className="file-text">Escolher arquivo</span>
+              </label>
+              <input onChange={handleFileChange} type="file" id="fileInput" className="file-input" />
+              <span id="fileName" className="file-name">{fileName}</span>
+            </div>
             <div className="input">
               <label>Nome</label>
-              <input placeholder='ex: Iphone 16 Pro Max' type="text" />
+              <input placeholder="ex: iPhone 15 Pro Max" type="text" />
             </div>
             <div className="input">
               <label>Descrição</label>
-              <input placeholder='ex: Cor Branca, 16 GB RAM e 256 GB' type="text" />
+              <input placeholder="ex: Cor Grafite, 8 GB RAM e 256 GB" type="text" />
             </div>
             <div className="input">
               <label>Preço</label>
-              <input placeholder='ex: 4999,99' type="text" />
+              <input placeholder="ex: 8499,00" type="text" />
             </div>
             <div className="input">
               <label>Quantidade</label>
-              <input placeholder='ex: 100' type="text" />
+              <input placeholder="ex: 100" type="text" />
             </div>
             <div className="input">
               <label>Código do Estoque</label>
-              <input placeholder='ex: A1B2C3D4' type="text" />
+              <input placeholder="ex: IP15PMX256-GRF" type="text" />
             </div>
             <div className="input">
               <label>Categoria</label>
-              <input placeholder='ex: Eletrônico' type="text" />
+              <input placeholder="ex: Eletrônicos" type="text" />
             </div>
             <div className="input">
               <label>Marca do Produto</label>
-              <input placeholder='ex: Apple' type="text" />
+              <input placeholder="ex: Apple" type="text" />
             </div>
             <div className="input">
               <label>Visíbilidade</label>
@@ -75,28 +93,29 @@ const Produtos = () => {
             </div>
             <div className="input">
               <label>Percentual de Desconto</label>
-              <input placeholder='ex: 10%' type="text" />
+              <input placeholder="ex: 5 %" type="text" />
             </div>
             <div className="input">
               <label>Comprimento</label>
-              <input placeholder='ex: 100 milímetros' type="text" />
+              <input placeholder="ex: 159,9 mm" type="text" />
             </div>
             <div className="input">
               <label>Largura</label>
-              <input placeholder='ex: 200 milímetros' type="text" />
+              <input placeholder="ex: 76,7 mm" type="text" />
             </div>
             <div className="input">
               <label>Altura</label>
-              <input placeholder='ex: 10 milímetros' type="text" />
+              <input placeholder="ex: 8,25 mm" type="text" />
             </div>
             <div className="input">
               <label>Peso</label>
-              <input placeholder='ex: 600 gramas' type="text" />
+              <input placeholder="ex: 221 g" type="text" />
             </div>
             <div className="input">
-              <label>Palavras Chaves (utilize ; para separar)</label>
-              <input placeholder='ex: Apple Intelligence; 48 MP; Ultra Wide' maxLength={3} min={1} type="text" />
+              <label>Palavras-Chaves (utilize ; para separar)</label>
+              <input placeholder="ex: Apple; A17 Pro; Câmera Tripla; USB-C" type="text" />
             </div>
+
           </div>
         </div>
 

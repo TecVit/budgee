@@ -52,6 +52,7 @@ body {
   margin: 0;
   border: 0;
   box-sizing: border-box;
+  outline: none;
   font-family: var(--font-montserrat);
 }
 
@@ -141,9 +142,15 @@ a {
 .btn-green {
   background: var(--green) !important;
   color: var(--white) !important;
+} .btn-green:hover,
+.btn-green:focus {
+  background: var(--six) !important;
 }
 
 .btn-red {
   background: var(--red) !important;
   color: var(--white) !important;
+} .btn-red:hover,
+.btn-red:focus {
+  background: var(--six) !important;
 }
