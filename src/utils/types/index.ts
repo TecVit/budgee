@@ -1,5 +1,5 @@
 interface ProductDB {
-  id: string; // identificador único do produto
+  id: number; // identificador único do produto
   name: string; // nome do produto
   description?: string; // descrição do produto
   price: number; // preço do produto

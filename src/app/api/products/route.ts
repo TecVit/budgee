@@ -20,7 +20,7 @@ export async function GET(req: NextRequest) {
     if (rows.length === 0) {
       await client.end();
       return NextResponse.json({ 
-        status: 400, 
+        status: 404, 
         message: 'Nenhum produto foi encontrado' 
       }, { status: 404 });
     }
@@ -29,11 +29,17 @@ export async function GET(req: NextRequest) {
       id: row.id,
       name: row.name,
       description: row.description,
+      price: row.price,
+      isActive: row.isActive,
+      quantity: row.quantity,
+      category: row.category,
+      brand: row.brand,
+      sku: row.sku,
     })) as ProductDB[];
 
     if (productMapped.length === 0) {
       return NextResponse.json({ 
-        status: 400, 
+        status: 404, 
         message: 'Nenhum produto foi encontrado' 
       }, { status: 404 });
     }
@@ -45,10 +51,10 @@ export async function GET(req: NextRequest) {
       message: "Produtos coletados com sucesso!",
       products: productMapped,
     }, {
-      headers: {
-        'Content-Type': 'application/json',
-        'Access-Control-Allow-Origin': '*',
-      },
+      // headers: {
+      //   'Content-Type': 'application/json',
+      //   'Access-Control-Allow-Origin': '*',
+      // },
     });
   } catch (error) {
     console.error('Erro ao buscar produtos:', error);

@@ -7,14 +7,27 @@ import { useEffect, useState } from 'react';
 
 const Produtos = () => {
 
+  const [loading, setLoading] = useState<boolean>(true);
   const [products, setProducts] = useState<ProductDB[]>([]);
 
   const [showMenu, setShowMenu] = useState<number>(-1); // ID product
 
   useEffect(() => {
     const fetching = async () => {
-      const res = await fetch('/products(1).json');
-      setProducts(await res.json());
+      try {
+        const res = await fetch('/api/products');
+        if (res.status !== 200) {
+          return;
+        }
+        const data = await res.json();
+        const products = data.products as ProductDB[];
+        
+        setProducts(products);
+      } catch (error) {
+        console.log(error);
+      } finally {
+        setLoading(false);
+      }
     }
 
     fetching();
@@ -67,9 +80,13 @@ const Produtos = () => {
                     </td>
                   </tr>
                 ))
+              ) : loading ? (
+                <tr>
+                  <td style={{ textAlign: 'center' }} colSpan={5}>Carregando produtos...</td>
+                </tr>
               ) : (
                 <tr>
-                  <td colSpan={5}>Nenhum produto encontrado</td>
+                  <td style={{ textAlign: 'center' }} colSpan={5}>Nenhum produto encontrado</td>
                 </tr>
               )}
             </tbody>
