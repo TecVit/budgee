@@ -51,8 +51,11 @@ export async function GET(req: NextRequest) {
       },
     });
   } catch (error) {
-    console.error('Erro ao buscar artigos:', error);
-    return NextResponse.json({ error: 'Erro interno do servidor' }, { status: 500 });
+    console.error('Erro ao buscar produtos:', error);
+    return NextResponse.json({ 
+      status: 500, 
+      error: 'Erro interno do servidor' 
+    }, { status: 500 });
   } finally {
     await client.end();
   }
