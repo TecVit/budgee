@@ -82,7 +82,17 @@ const Produtos = () => {
                 ))
               ) : loading ? (
                 <tr>
-                  <td style={{ textAlign: 'center' }} colSpan={5}>Carregando produtos...</td>
+                  <td colSpan={5}> 
+                  <div style={{
+                    width: '100%',
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    textAlign: 'center',
+                  }}>
+                    <div className="loader"></div>
+                    <p style={{ fontSize: '18px', margin: '0px 0px 0px 14px' }}>Carregando produtos...</p>
+                  </div> </td>
                 </tr>
               ) : (
                 <tr>
